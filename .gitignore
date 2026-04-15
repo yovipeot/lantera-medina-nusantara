@@ -1,1 +1,5 @@
 node_modules/
+
+# Temporarily exclude problematic compressed files
+src/assets/qurban.png
+src/assets/tabunganQurban.jpeg
