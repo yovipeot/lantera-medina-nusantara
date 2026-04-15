@@ -9,8 +9,11 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center">
                 <Heart className="text-white w-6 h-6 fill-current" />
+              </div> */}
+              <div>
+                <img src="/assets/LogoLantera.png" alt="Lantera" className="w-12 h-12 object-contain" />
               </div>
               <div className="leading-tight">
                 <span className="text-xl font-bold block">Lantera</span>
@@ -21,9 +24,21 @@ export const Footer = () => {
               Kami adalah organisasi nirlaba yang mendedikasikan diri untuk masa depan anak-anak Indonesia yang lebih baik melalui pendidikan dan kesehatan.
             </p>
             <div className="flex gap-4">
-              {[Instagram, Facebook, Twitter, Youtube].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full bg-sky-900 flex items-center justify-center hover:bg-orange-400 transition-colors group">
-                  <Icon className="w-5 h-5 text-sky-300 group-hover:text-white" />
+              {[
+                { Icon: Instagram, href: 'https://instagram.com/lantera', label: 'Instagram' },
+                { Icon: Facebook, href: 'https://facebook.com/lantera', label: 'Facebook' },
+                { Icon: Twitter, href: 'https://twitter.com/lantera', label: 'Twitter' },
+                { Icon: Youtube, href: 'https://youtube.com/lantera', label: 'YouTube' },
+              ].map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.label}
+                  className="w-10 h-10 rounded-full bg-sky-900 flex items-center justify-center hover:bg-orange-400 transition-colors group"
+                >
+                  <item.Icon className="w-5 h-5 text-sky-300 group-hover:text-white" />
                 </a>
               ))}
             </div>
@@ -33,11 +48,18 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-6 border-b border-sky-800 pb-2 inline-block">Menu Cepat</h4>
             <ul className="space-y-4">
-              {['Beranda', 'Tentang Kami', 'Program Kerja', 'Donasi', 'Laporan Transparansi', 'Blog & Berita'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-sky-200/70 hover:text-white flex items-center gap-2 group transition-colors">
+              {[
+                { label: 'Beranda', href: '/' },
+                { label: 'Tentang Kami', href: '/tentang-kami' },
+                { label: 'Program Kerja', href: '/program-kerja' },
+                { label: 'Donasi', href: '/donasi' },
+                { label: 'Laporan Transparansi', href: '/laporan-transparansi' },
+                { label: 'Blog & Berita', href: '/blog' },
+              ].map((item) => (
+                <li key={item.label}>
+                  <a href={item.href} className="text-sky-200/70 hover:text-white flex items-center gap-2 group transition-colors">
                     <ArrowRight className="w-4 h-4 text-sky-600 group-hover:text-sky-400" />
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
