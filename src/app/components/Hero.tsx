@@ -20,16 +20,16 @@ export const Hero = () => {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-sky-100 mb-6">
               <span className="flex h-2 w-2 rounded-full bg-orange-400 animate-pulse" />
-              <span className="text-sm font-semibold text-sky-700 uppercase tracking-wider">Bersama Untuk Masa Depan Mereka</span>
+              <span className="text-sm font-semibold text-sky-700 uppercase tracking-wider">Mari Jadi Jalan Kebaikan</span>
             </div>
             
             <h1 className="text-5xl md:text-6xl font-extrabold text-sky-950 leading-tight mb-6">
-              Berikan Senyuman, <br />
-              <span className="text-sky-600 underline decoration-orange-300 underline-offset-8">Ubah Masa Depan</span>
+              Hadiahkan harapan untuk 
+              <span className="text-sky-600 underline decoration-orange-300 underline-offset-8"> Yatim dan Dhu'afa</span>
             </h1>
             
             <p className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
-              Setiap anak berhak mendapatkan kasih sayang, pendidikan, dan kehidupan yang layak. Bergabunglah bersama kami untuk mewujudkan impian mereka.
+              Yayasan Lantera Medina Nusantara menghadirkan program sosial, pendidikan, pangan, qurban dan wakaf agar bantuan yang dititipkan benar-benar menjadi nyata bagi mereka yang membutuhkan. Mari bergabung dan jadikan setiap donasi sebagai jalan kebaikan yang berkelanjutan.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -44,7 +44,7 @@ export const Hero = () => {
                 href="#about"
                 className="flex items-center justify-center gap-2 bg-white hover:bg-sky-50 text-sky-700 border border-sky-100 px-8 py-4 rounded-2xl font-bold text-lg transition-all hover:-translate-y-1 active:scale-95"
               >
-                Dukung Program
+                Lihat Program
                 <ChevronRight className="w-5 h-5" />
               </a>
             </div>
@@ -71,25 +71,62 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="relative"
+            className="relative border border-amber-100 rounded-3xl p-8 bg-amber-100/70"
           >
-            <div className="relative z-10 rounded-[40px] overflow-hidden shadow-2xl border-8 border-white">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1617078913444-5bfe537fe74c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGNoaWxkcmVuJTIwcGxheWluZyUyMHNjaG9vbCUyMGluZG9uZXNpYXxlbnwxfHx8fDE3NzA2NDIyMTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Anak-anak bahagia"
-                className="w-full aspect-[4/5] object-cover"
-              />
-            </div>
-            {/* Stats Badge */}
-            <div className="absolute -bottom-6 -left-6 z-20 bg-white p-6 rounded-3xl shadow-xl border border-sky-50">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center">
-                  <Heart className="text-emerald-600 fill-current" />
-                </div>
-                <div>
-                  <p className="text-2xl font-bold text-sky-950">Rp 2.4M+</p>
-                  <p className="text-xs text-gray-500 font-medium">Dana Tersalurkan</p>
-                </div>
+            <div className="space-y-6">
+              {/* Info Header */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 rounded-full">
+                <span className="text-sm font-bold text-amber-900 uppercase tracking-wider">Tentang Yayasan</span>
+              </div>
+
+              {/* Main Title */}
+              <h2 className="text-4xl md:text-5xl font-extrabold text-sky-950 leading-tight mb-8">
+                Gerakan kecil Anda bisa menjadi cahaya besar bagi sesama.
+              </h2>
+
+              {/* 4 Boxes Grid */}
+              <div className="grid grid-cols-2 gap-4">
+                <motion.div
+                  whileHover={{ y: -5 }}
+                  className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:shadow-lg transition-all"
+                >
+                  <p className="text-4xl font-extrabold text-emerald-600 mb-2">7 Program</p>
+                  <p className="text-sm text-gray-600">Program kemanusiaan yang sudah berjalan.</p>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ y: -5 }}
+                  className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:shadow-lg transition-all"
+                >
+                  <p className="text-4xl font-extrabold text-emerald-600 mb-2">2021</p>
+                  <h4 className="text-xl font-bold text-sky-900 mb-2">Tahun Legalitas</h4>
+                  <p className="text-sm text-gray-600">Yayasan terdaftar resmi.</p>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ y: -5 }}
+                  className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:shadow-lg transition-all"
+                >
+                  <h4 className="text-2xl font-bold text-emerald-600 mb-2">Nasional</h4>
+                  <p className="text-sm text-gray-600">Semangat berbagi hingga pelosok negeri.</p>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ y: -5 }}
+                  className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:shadow-lg transition-all"
+                >
+                  <h4 className="text-2xl font-bold text-emerald-600 mb-2">Amanah</h4>
+                  <p className="text-sm text-gray-600">Berlandaskan kepedulian dan kebermanfaatan.</p>
+                </motion.div>
+              </div>
+
+              {/* Program Tags */}
+              <div className="flex flex-wrap gap-3 mt-8">
+                {['Khitanan Massal', 'Senyum Yatim', 'Santri Berdaya', 'Qurban Berbagi', 'Wakaf Quran', 'Jumat Berbagi'].map((tag, i) => (
+                  <span key={i} className="px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-white-100 transition-colors">
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
           </motion.div>

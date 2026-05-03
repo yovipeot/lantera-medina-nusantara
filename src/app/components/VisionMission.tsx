@@ -30,10 +30,10 @@ export const VisionMission = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-sky-600 font-bold tracking-widest uppercase text-sm mb-4">Visi & Misi Kami</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-sky-950 mb-6">
-            Membangun Masa Depan yang Lebih Cerah, <br className="hidden md:block" /> Satu Anak pada Satu Waktu
+            Gerakan Kecil Anda Bisa Menjadi Cahaya <br className="hidden md:block" /> Besar Bagi Sesama
           </h3>
           <p className="text-gray-600 text-lg">
-            Kami percaya bahwa setiap anak adalah benih harapan yang harus kita jaga bersama. Yayasan Peduli Anak hadir sebagai jembatan kebaikan bagi mereka.
+            Yayasan Lantera Medina Nusantara adalah Lembaga sosial yang hadir untuk menebar manfaat bagi yatim dan dhu'afa melalui program yang nyata, terarah dan penuh kepedulian. Setiap dukungan yang diberikan diharapkan menajadi bagian dari perubahan hidup mereka yang membutuhkan bantuan, perhatian dan kesempatan untuk masa depan yang lebih baik.
           </p>
         </div>
 
@@ -60,15 +60,21 @@ export const VisionMission = () => {
           <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h4 className="text-3xl font-bold mb-6 italic font-serif leading-tight">
-                "Visi kami adalah melihat dunia di mana tidak ada anak yang merasa sendirian dalam mengejar cita-citanya."
+                Ringkasan Singkat 
               </h4>
-              <p className="text-sky-200 text-lg">
+              <ul className="text-2xl font-bold mb-4 text-sky-300 list-disc list-inside">
+                <li>7 Program kemanusiaan yang sudah berjalan</li>
+                <li>Legalitas resmi tahun 2021</li>
+                <li>Semangat berbagi hingga pelosok negeri</li>
+                <li>Fokus pada amanah dan kebermanfaatan</li>
+              </ul>
+              <p className="text-lg">
                 — Yayasan Lantera Medina Nusantara
               </p>
             </div>
             <div className="flex justify-center md:justify-end">
               <div className="text-center px-8 py-6 border border-sky-700 rounded-3xl backdrop-blur-sm">
-                <p className="text-5xl font-extrabold mb-2">10th</p>
+                <p className="text-5xl font-extrabold mb-2">5th</p>
                 <p className="text-sky-300 font-medium">Tahun Mengabdi</p>
               </div>
             </div>

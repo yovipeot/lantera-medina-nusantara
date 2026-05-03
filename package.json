@@ -1,8 +1,21 @@
 {
-  "name": "@figma/my-make-file",
-  "private": true,
+  "name": "lantera-medina-nusantara",
   "version": "0.0.1",
+  "private": true,
+  "description": "This is a code bundle for Desain Website Yayasan Peduli Anak (Community). The original project is available at https://www.figma.com/design/Lv8zCF9R7mQfhqjqg2R9Uk/Desain-Website-Yayasan-Peduli-Anak--Community-.",
+  "keywords": [],
+  "homepage": "https://github.com/yovipeot/lantera-medina-nusantara#readme",
+  "bugs": {
+    "url": "https://github.com/yovipeot/lantera-medina-nusantara/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yovipeot/lantera-medina-nusantara.git"
+  },
+  "license": "ISC",
+  "author": "Yovi Riszan",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "build": "vite build",
     "dev": "vite"
